@@ -1,0 +1,35 @@
+class Config:
+    MYSQL_HOST = "mysql_db"
+    MYSQL_USER = "root"
+    MYSQL_PASSWORD = "root"
+    MYSQL_DB = "eshop"
+    
+    NEO4J_URI = "bolt://neo4j_db:7687"
+    NEO4J_USER = "neo4j"
+    NEO4J_PASSWORD = "password"
+    
+    MONGODB_URI = "mongodb://mongo_db:27017/"
+    MONGODB_DB = "eshop_data"
+    
+    KAFKA_BOOTSTRAP_SERVERS = ['kafka:9092']
+    KAFKA_MSG_ENCODING = 'utf-8'
+    KAFKA_GROUP_ID = 'etl-group'
+    KAFKA_TOPIC_USERS = 'users-topic'
+    KAFKA_TOPIC_CLOTHES = 'clothes-topic'
+    KAFKA_AUTO_OFFSET_RESET = 'earliest'
+    KAFKA_SESSION_TIMEOUT_MS = 45000
+    KAFKA_MAX_POLL_INTERVAL_MS = 60000
+    KAFKA_HEARTBEAT_INTERVAL_MS = 3000
+    KAFKA_ENABLE_AUTO_COMMIT = False
+    KAFKA_PRODUCER_ACKS = 'all'
+    KAFKA_PRODUCER_RETRIES = 5
+    KAFKA_PRODUCER_RETRY_BACKOFF_MS = 5000
+    KAFKA_PRODUCER_REQUEST_TIMEOUT_MS = 120000
+    KAFKA_CONNECT_ATTEMPTS = 12
+    KAFKA_CONNECT_INTERVAL_S = 10
+
+    MYSQL_BATCH_SIZE = 10
+    MYSQL_BATCH_SLEEP_SECONDS = 10
+    
+    NEO4J_BATCH_SIZE = 5
+    NEO4J_BATCH_SLEEP_SECONDS = 20
