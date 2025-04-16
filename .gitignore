@@ -1,0 +1,7 @@
+**/__pycache__/
+venv/
+*.pyc
+*.code-workspace
+docker-compose.yml
+docker-compose_localhost.yml
+config.py
